@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  IGDetailViewController.h
 //  Scroll View Image Galleries
 //
 //  Created by asu on 2015-09-07.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface IGGalleryViewController : UIViewController <UIScrollViewDelegate>
+@interface IGDetailViewController : UIViewController <UIScrollViewDelegate>
+@property (strong, nonatomic) UIImage *image;
 
 @end
-

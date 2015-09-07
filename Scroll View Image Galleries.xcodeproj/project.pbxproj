@@ -14,6 +14,7 @@
 		126E98C41B9E39DA0059518A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 126E98C21B9E39DA0059518A /* LaunchScreen.xib */; };
 		126E98D01B9E39DA0059518A /* Scroll_View_Image_GalleriesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 126E98CF1B9E39DA0059518A /* Scroll_View_Image_GalleriesTests.m */; };
 		126E98DA1B9E3C3A0059518A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 126E98D91B9E3C3A0059518A /* Images.xcassets */; };
+		126E98DD1B9E4AD10059518A /* IGDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 126E98DC1B9E4AD10059518A /* IGDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		126E98CE1B9E39DA0059518A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		126E98CF1B9E39DA0059518A /* Scroll_View_Image_GalleriesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Scroll_View_Image_GalleriesTests.m; sourceTree = "<group>"; };
 		126E98D91B9E3C3A0059518A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		126E98DB1B9E4AD10059518A /* IGDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGDetailViewController.h; sourceTree = "<group>"; };
+		126E98DC1B9E4AD10059518A /* IGDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				126E98B81B9E39DA0059518A /* IGAppDelegate.m */,
 				126E98BA1B9E39DA0059518A /* IGGalleryViewController.h */,
 				126E98BB1B9E39DA0059518A /* IGGalleryViewController.m */,
+				126E98DB1B9E4AD10059518A /* IGDetailViewController.h */,
+				126E98DC1B9E4AD10059518A /* IGDetailViewController.m */,
 				126E98BD1B9E39DA0059518A /* Main.storyboard */,
 				126E98C21B9E39DA0059518A /* LaunchScreen.xib */,
 				126E98D91B9E3C3A0059518A /* Images.xcassets */,
@@ -220,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				126E98BC1B9E39DA0059518A /* IGGalleryViewController.m in Sources */,
+				126E98DD1B9E4AD10059518A /* IGDetailViewController.m in Sources */,
 				126E98B91B9E39DA0059518A /* IGAppDelegate.m in Sources */,
 				126E98B61B9E39DA0059518A /* main.m in Sources */,
 			);
@@ -416,6 +422,7 @@
 				126E98D51B9E39DA0059518A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		126E98D61B9E39DA0059518A /* Build configuration list for PBXNativeTarget "Scroll View Image GalleriesTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +431,7 @@
 				126E98D81B9E39DA0059518A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

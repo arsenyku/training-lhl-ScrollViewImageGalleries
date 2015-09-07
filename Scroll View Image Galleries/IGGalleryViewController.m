@@ -7,9 +7,11 @@
 //
 
 #import "IGGalleryViewController.h"
+#import "IGDetailViewController.h"
 
 @interface IGGalleryViewController ()
 @property (weak, nonatomic) IBOutlet UIScrollView *galleryScrollView;
+@property (strong, nonatomic) IBOutlet UITapGestureRecognizer *tapRecognizer;
 
 @end
 
@@ -31,6 +33,8 @@
         imageView.image = [UIImage imageNamed:images[i]];
         imageView.contentMode = UIViewContentModeScaleAspectFill;
         imageView.clipsToBounds = YES;
+        imageView.userInteractionEnabled = YES;
+        
         [self.galleryScrollView addSubview:imageView];
         [self layoutImageView:imageView rightOfView:previousImageView];
         previousImageView = imageView;
@@ -44,6 +48,24 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)tapDetected:(id)sender {
+    NSLog(@"%@", sender);
+    CGPoint tapLocation = [self.tapRecognizer locationInView:self.tapRecognizer.view];
+    UIImageView* hitView = (UIImageView*)[self.tapRecognizer.view hitTest:tapLocation withEvent:nil];
+
+    if ([hitView isKindOfClass:[UIImageView class]]){
+        [self performSegueWithIdentifier:@"showDetail" sender:hitView.image];
+        
+    }
+    
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([segue.identifier isEqualToString:@"showDetail"]){
+        ((IGDetailViewController*)segue.destinationViewController).image = sender;
+        
+    }
+}
 
 #pragma mark - private
 
