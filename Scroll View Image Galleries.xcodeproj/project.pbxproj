@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		126E98B61B9E39DA0059518A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 126E98B51B9E39DA0059518A /* main.m */; };
-		126E98B91B9E39DA0059518A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 126E98B81B9E39DA0059518A /* AppDelegate.m */; };
-		126E98BC1B9E39DA0059518A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 126E98BB1B9E39DA0059518A /* ViewController.m */; };
+		126E98B91B9E39DA0059518A /* IGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 126E98B81B9E39DA0059518A /* IGAppDelegate.m */; };
+		126E98BC1B9E39DA0059518A /* IGGalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 126E98BB1B9E39DA0059518A /* IGGalleryViewController.m */; };
 		126E98BF1B9E39DA0059518A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 126E98BD1B9E39DA0059518A /* Main.storyboard */; };
-		126E98C11B9E39DA0059518A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 126E98C01B9E39DA0059518A /* Images.xcassets */; };
 		126E98C41B9E39DA0059518A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 126E98C21B9E39DA0059518A /* LaunchScreen.xib */; };
 		126E98D01B9E39DA0059518A /* Scroll_View_Image_GalleriesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 126E98CF1B9E39DA0059518A /* Scroll_View_Image_GalleriesTests.m */; };
+		126E98DA1B9E3C3A0059518A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 126E98D91B9E3C3A0059518A /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,16 +30,16 @@
 		126E98B01B9E39DA0059518A /* Scroll View Image Galleries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scroll View Image Galleries.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		126E98B41B9E39DA0059518A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		126E98B51B9E39DA0059518A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		126E98B71B9E39DA0059518A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		126E98B81B9E39DA0059518A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		126E98BA1B9E39DA0059518A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		126E98BB1B9E39DA0059518A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		126E98B71B9E39DA0059518A /* IGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IGAppDelegate.h; sourceTree = "<group>"; };
+		126E98B81B9E39DA0059518A /* IGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IGAppDelegate.m; sourceTree = "<group>"; };
+		126E98BA1B9E39DA0059518A /* IGGalleryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IGGalleryViewController.h; sourceTree = "<group>"; };
+		126E98BB1B9E39DA0059518A /* IGGalleryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IGGalleryViewController.m; sourceTree = "<group>"; };
 		126E98BE1B9E39DA0059518A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		126E98C01B9E39DA0059518A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		126E98C31B9E39DA0059518A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		126E98C91B9E39DA0059518A /* Scroll View Image GalleriesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Scroll View Image GalleriesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		126E98CE1B9E39DA0059518A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		126E98CF1B9E39DA0059518A /* Scroll_View_Image_GalleriesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Scroll_View_Image_GalleriesTests.m; sourceTree = "<group>"; };
+		126E98D91B9E3C3A0059518A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +81,13 @@
 		126E98B21B9E39DA0059518A /* Scroll View Image Galleries */ = {
 			isa = PBXGroup;
 			children = (
-				126E98B71B9E39DA0059518A /* AppDelegate.h */,
-				126E98B81B9E39DA0059518A /* AppDelegate.m */,
-				126E98BA1B9E39DA0059518A /* ViewController.h */,
-				126E98BB1B9E39DA0059518A /* ViewController.m */,
+				126E98B71B9E39DA0059518A /* IGAppDelegate.h */,
+				126E98B81B9E39DA0059518A /* IGAppDelegate.m */,
+				126E98BA1B9E39DA0059518A /* IGGalleryViewController.h */,
+				126E98BB1B9E39DA0059518A /* IGGalleryViewController.m */,
 				126E98BD1B9E39DA0059518A /* Main.storyboard */,
-				126E98C01B9E39DA0059518A /* Images.xcassets */,
 				126E98C21B9E39DA0059518A /* LaunchScreen.xib */,
+				126E98D91B9E3C3A0059518A /* Images.xcassets */,
 				126E98B31B9E39DA0059518A /* Supporting Files */,
 			);
 			path = "Scroll View Image Galleries";
@@ -199,9 +199,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				126E98DA1B9E3C3A0059518A /* Images.xcassets in Resources */,
 				126E98BF1B9E39DA0059518A /* Main.storyboard in Resources */,
 				126E98C41B9E39DA0059518A /* LaunchScreen.xib in Resources */,
-				126E98C11B9E39DA0059518A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,8 +219,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				126E98BC1B9E39DA0059518A /* ViewController.m in Sources */,
-				126E98B91B9E39DA0059518A /* AppDelegate.m in Sources */,
+				126E98BC1B9E39DA0059518A /* IGGalleryViewController.m in Sources */,
+				126E98B91B9E39DA0059518A /* IGAppDelegate.m in Sources */,
 				126E98B61B9E39DA0059518A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

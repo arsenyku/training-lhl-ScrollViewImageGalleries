@@ -6,13 +6,13 @@
 //  Copyright (c) 2015 asu. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "IGAppDelegate.h"
 
-@interface AppDelegate ()
+@interface IGAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation IGAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {

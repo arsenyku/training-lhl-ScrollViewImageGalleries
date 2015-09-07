@@ -6,17 +6,19 @@
 //  Copyright (c) 2015 asu. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "IGGalleryViewController.h"
 
-@interface ViewController ()
+@interface IGGalleryViewController ()
 
 @end
 
-@implementation ViewController
+@implementation IGGalleryViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+
+    
 }
 
 - (void)didReceiveMemoryWarning {
