@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yuo-75-AZl">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yuo-75-AZl">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </scrollView>
                         </subviews>
@@ -28,6 +28,9 @@
                             <constraint firstItem="yuo-75-AZl" firstAttribute="bottom" secondItem="kh9-bI-dsS" secondAttribute="bottom" id="yvY-Oj-4G6" userLabel="Scroll bottom"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="galleryScrollView" destination="yuo-75-AZl" id="14b-E1-u5R"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

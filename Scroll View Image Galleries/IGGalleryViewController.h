@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface IGGalleryViewController : UIViewController
+@interface IGGalleryViewController : UIViewController <UIScrollViewDelegate>
 
 
 @end
