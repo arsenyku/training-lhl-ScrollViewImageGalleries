@@ -23,18 +23,31 @@
                                     <outletCollection property="gestureRecognizers" destination="0Z9-fm-yHb" appends="YES" id="aWw-Xd-zFd"/>
                                 </connections>
                             </scrollView>
+                            <pageControl contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="ZJd-Xu-si9">
+                                <rect key="frame" x="281" y="535" width="39" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="39" placeholder="YES" id="Wua-3u-zKf"/>
+                                    <constraint firstAttribute="height" constant="40" id="qMV-ba-uTm"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="pageControlPressed:" destination="vXZ-lx-hvc" eventType="valueChanged" id="uNL-OL-2so"/>
+                                </connections>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="yuo-75-AZl" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="9BC-cn-Xe1" userLabel="Scroll left"/>
                             <constraint firstItem="yuo-75-AZl" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailing" id="Gas-FP-nng" userLabel="Scroll right"/>
+                            <constraint firstItem="ZJd-Xu-si9" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Hq6-Gm-SW2" userLabel="Page centre x"/>
                             <constraint firstItem="yuo-75-AZl" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="Pd8-KH-i6h" userLabel="Scroll top"/>
+                            <constraint firstItem="ZJd-Xu-si9" firstAttribute="bottom" secondItem="kh9-bI-dsS" secondAttribute="bottom" constant="-25" id="sjF-8a-ksS" userLabel="Page bottom"/>
                             <constraint firstItem="yuo-75-AZl" firstAttribute="bottom" secondItem="kh9-bI-dsS" secondAttribute="bottom" id="yvY-Oj-4G6" userLabel="Scroll bottom"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="e8i-zf-2yl"/>
                     <connections>
                         <outlet property="galleryScrollView" destination="yuo-75-AZl" id="14b-E1-u5R"/>
+                        <outlet property="pageControl" destination="ZJd-Xu-si9" id="CKK-yW-FA9"/>
                         <outlet property="tapRecognizer" destination="0Z9-fm-yHb" id="KJs-Qb-vG2"/>
                         <segue destination="HRp-Ue-cgX" kind="show" identifier="showDetail" id="JQs-YQ-Jiv"/>
                     </connections>
@@ -76,8 +89,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9zK-Wm-h89">
-                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9zK-Wm-h89">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Btw-kA-XoW"/>
                                 </subviews>

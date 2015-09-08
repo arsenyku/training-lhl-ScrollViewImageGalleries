@@ -12,6 +12,7 @@
 @interface IGGalleryViewController ()
 @property (weak, nonatomic) IBOutlet UIScrollView *galleryScrollView;
 @property (strong, nonatomic) IBOutlet UITapGestureRecognizer *tapRecognizer;
+@property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
 
 @end
 
@@ -28,7 +29,7 @@
     NSArray *images = @[ @"Lighthouse-in-Field", @"Lighthouse-night", @"Lighthouse-zoomed" ];
     
     UIImageView *previousImageView = nil;
-    for (int i = 0 ; i < 3 ; i++){
+    for (int i = 0 ; i < [images count] ; i++){
         UIImageView *imageView = [UIImageView new];
         imageView.image = [UIImage imageNamed:images[i]];
         imageView.contentMode = UIViewContentModeScaleAspectFill;
@@ -48,10 +49,26 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+#pragma mark -  <UIScrollViewDelegate>
+
+-(int)pageNumberFromOffset{
+    return round(self.galleryScrollView.contentOffset.x / self.view.frame.size.width);
+}
+
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    
+    self.pageControl.currentPage = [self pageNumberFromOffset];
+    [self.galleryScrollView bringSubviewToFront:self.pageControl];
+
+}
+
+#pragma mark - events from controls
+
 - (IBAction)tapDetected:(id)sender {
     NSLog(@"%@", sender);
     CGPoint tapLocation = [self.tapRecognizer locationInView:self.tapRecognizer.view];
-    UIImageView* hitView = (UIImageView*)[self.tapRecognizer.view hitTest:tapLocation withEvent:nil];
+    UIImageView* hitView = (UIImageView*)[self.galleryScrollView hitTest:tapLocation withEvent:nil];
 
     if ([hitView isKindOfClass:[UIImageView class]]){
         [self performSegueWithIdentifier:@"showDetail" sender:hitView.image];
@@ -66,6 +83,11 @@
         
     }
 }
+
+- (IBAction)pageControlPressed:(UIPageControl*)sender {
+   
+}
+
 
 #pragma mark - private
 
