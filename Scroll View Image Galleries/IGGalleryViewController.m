@@ -78,7 +78,7 @@
 #pragma mark - events from controls
 
 - (IBAction)tapDetected:(id)sender {
-    NSLog(@"%@", sender);
+   
     CGPoint tapLocation = [self.tapRecognizer locationInView:self.tapRecognizer.view];
     UIImageView* hitView = (UIImageView*)[self.galleryScrollView hitTest:tapLocation withEvent:nil];
 

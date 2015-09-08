@@ -25,6 +25,7 @@
     self.detailScrollView.delegate = self;
     
     self.detailImageView.image = self.image;
+    [self.detailScrollView setZoomScale:self.detailScrollView.minimumZoomScale];
 
 }
 
