@@ -23,10 +23,11 @@
                                     <outletCollection property="gestureRecognizers" destination="0Z9-fm-yHb" appends="YES" id="aWw-Xd-zFd"/>
                                 </connections>
                             </scrollView>
-                            <pageControl contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="ZJd-Xu-si9">
-                                <rect key="frame" x="281" y="535" width="39" height="40"/>
+                            <pageControl opaque="NO" clipsSubviews="YES" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="ZJd-Xu-si9">
+                                <rect key="frame" x="270" y="535" width="60" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="39" placeholder="YES" id="Wua-3u-zKf"/>
+                                    <constraint firstAttribute="width" constant="60" id="Wua-3u-zKf"/>
                                     <constraint firstAttribute="height" constant="40" id="qMV-ba-uTm"/>
                                 </constraints>
                                 <connections>

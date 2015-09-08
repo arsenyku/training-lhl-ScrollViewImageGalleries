@@ -26,6 +26,9 @@
 
     self.galleryScrollView.delegate = self;
     
+    self.pageControl.layer.cornerRadius = 10;
+    self.pageControl.clipsToBounds = YES;
+    
     NSArray *images = @[ @"Lighthouse-in-Field", @"Lighthouse-night", @"Lighthouse-zoomed" ];
     
     UIImageView *previousImageView = nil;
@@ -49,6 +52,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)viewWillAppear:(BOOL)animated {
+    [self.navigationController setNavigationBarHidden:YES animated:animated];
+    [super viewWillAppear:animated];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [self.navigationController setNavigationBarHidden:NO animated:animated];
+    [super viewWillDisappear:animated];
+}
 
 #pragma mark -  <UIScrollViewDelegate>
 
@@ -85,7 +97,10 @@
 }
 
 - (IBAction)pageControlPressed:(UIPageControl*)sender {
-   
+
+    self.galleryScrollView.contentOffset = CGPointMake(self.galleryScrollView.frame.size.width*self.pageControl.currentPage, 0);
+    
+    
 }
 
 
